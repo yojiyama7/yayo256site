@@ -1,0 +1,164 @@
+@import "layout_parts";
+@import "surface_parts";
+
+// flex-boxにする
+// display: flex;
+// 縦中央
+// align-items: center;
+// vertical-align: middle;
+// 横中央
+// justify-content: center;
+
+// body::-webkit-scrollbar {
+// 	display:none;
+// }
+
+$white-gray: #fcfcfc;
+$light-gray: #bababa;
+$dark-gray: #6d6d6d;
+$black-gray: #1f1f1f;
+
+body {
+	color: $black-gray;
+}
+
+header {
+	overflow: hidden;
+	////////
+	background-color: $white-gray;
+	// background-color: #f2f2f2;
+	// background-color: black;
+	// box-shadow: 2px 0px 32px black;
+}
+.header {
+	&-box {
+		margin: 80px auto 24px;
+		////////
+		// color: white;
+		width: 840px;
+		// background-color: #353535;
+		@include clearfix;
+	}
+	&-logo {
+		&-text {
+			font-size: 52px;
+		}
+	}
+	&-menu {
+		margin-top: 48px;
+		float: right;
+		////////
+		&-list {
+			list-style: none;
+			@include clearfix;
+			&-item {
+				&:not(:first-child) {
+					margin-left: 40px
+				}
+				float: left;
+				&-text {
+					padding: 16px 0;
+					////////
+					font-size: 20px;
+					// color: white;
+					color: $black-gray;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#main {
+	&-picture {
+		overflow: hidden;
+		// background-color: rgba(black, 0.8);
+		// border: solid 8px #bbbbbb;
+		// border-top: solid 8px #bbbbbb;
+		// border-bottom: solid 8px #bbbbbb;
+	}
+	&-profile {
+		overflow: hidden;
+		background-color: $white-gray;
+	}
+	&-production {
+		overflow: hidden;
+	}
+}
+.main-picture {
+	&-box {
+		margin: 0px auto;
+		////////
+		height: 600px;
+		// width: 840px;
+		background-image : url("../../img/yayo256.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	// &-image {
+	// 	display: block;
+	// 	width: 100%;
+	// 	// opacity: 0.8;
+	// }
+}
+.main {
+	&-box {
+		margin: 120px auto;
+		width: 840px;
+	}
+	&-title {
+		font-size: 44px;
+		color: $dark-gray;
+		font-weight: normal;
+	}
+	&-list {
+		margin-top: 84px;
+		////////
+		list-style: none;
+		&-item {
+			&:not(:first-child) {
+				margin-top: 44px;
+			}
+			&-title {
+				font-size: 32px;
+				font-weight: normal;
+			}
+			&-text {
+				margin-top: 18px;
+				margin-right: 12px;
+				////////
+				font-size: 20px
+			}
+		}
+	}
+}
+
+footer {
+	overflow: hidden;
+	background-color: $dark-gray;
+}
+.footer {
+	&-box {
+		margin: 16px auto;
+		////////
+		width: 840px;
+		color: $white-gray;
+		@include clearfix;
+	}
+	&-twitter {
+		&-text {
+			text-decoration: none;
+			color: $white-gray;
+			// font-size: 20px;
+		}
+	}
+	&-message {
+		margin-top: 20px;
+		////////
+		float: right;
+		&-text {
+
+		}
+	}
+}

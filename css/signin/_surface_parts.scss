@@ -1,0 +1,14 @@
+.ul-none {
+	li {
+		list-style-type: none;
+	}
+}
+@mixin menu-button {
+	border-bottom: solid 1px #999999;
+	background-color: #dddddd;
+}
+@mixin logo-a($color) {
+	text-decoration: none;
+	color: $color;
+
+}
