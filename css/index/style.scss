@@ -1,0 +1,154 @@
+@mixin clearfix {
+	&::before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	&::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+body {
+	background: #fdfdfd;
+	font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+header {
+	overflow: hidden;
+	// background-color: #ededed;
+}
+.header {
+	margin: 40px auto 0px;
+	width: 800px;
+	&-logo {
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		// font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-size: 60px;
+	}
+	&-menu {
+		margin-top: 20px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 28px;
+		@include clearfix;
+		&-list {
+			float: right;
+			list-style: none;
+			@include clearfix;
+		}
+		&-item {
+			& + & {
+				margin-left: 32px;
+			}
+			float: left;
+			&-text {
+				display: inline-block;
+				padding: 16px 12px;
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
+
+#home {
+	overflow: hidden;
+	border-bottom: solid 4px #e4e4e4;
+	margin-bottom: 200px;
+}
+.home {
+	margin: 128px auto 12px;
+	// position: relative;
+	// height: 360px;
+	width: 800px;
+	@include clearfix();
+	&-text {
+		display: inline-block;
+		// position: absolute;
+		// bottom: 4px;
+		// right: 0px;
+		// float: right;
+		text-align: right;
+		width: 100%;
+		letter-spacing: 4px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 140px;
+		color: #e4e4e4;
+		&-1 {
+			// text-align: left;
+		}
+		&-2 {
+			// margin-top: -4px;
+			// text-align: center;
+		}
+	}
+}
+
+#intro {
+	overflow: hidden;
+}
+.intro {
+	margin: 52px auto 0px;
+	width: 800px;
+	&-title {
+		// display: inline-block;
+		text-align: right;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 64px;
+	}
+	&-list {
+		margin-top: 72px;
+		list-style: none;
+	}
+	&-item {
+		& + & {
+			margin-top: 64px;
+		}
+		&-heading {
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			font-size: 48px;
+		}
+		&-text {
+			margin-top: 12px;
+			font-size: 28px;
+			color: #4f4f4f
+		}
+	}
+}
+
+#works {
+	overflow: hidden;
+}
+.works {
+	margin: 152px auto 128px;
+	width: 800px;
+	&-title {
+		// display: inline-block;
+		text-align: right;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 64px;
+	}
+	&-list {
+		list-style: none;
+	}
+}
+
+
+footer {
+	overflow: hidden;
+	margin-top: 128px;
+	background-color: #c7c7c7;
+}
+.footer {
+	margin: 16px auto;
+	width: 800px;
+	&-text {
+		text-align: right;
+		font-size: 16px;
+		&-yayo256 {
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+	}
+}
