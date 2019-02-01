@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
 @mixin clearfix {
     &::before{
         content: "";
@@ -24,13 +26,15 @@ header {
     margin: 40px auto 0px;
     width: 800px;
     &-logo {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 60px;
     }
     &-menu {
         margin-top: 20px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 28px;
         @include clearfix;
         &-list {
@@ -73,7 +77,8 @@ header {
         text-align: right;
         width: 100%;
         letter-spacing: 4px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 140px;
         color: #e4e4e4;
         &-1 {
@@ -95,7 +100,8 @@ header {
     &-title {
         // display: inline-block;
         text-align: right;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 64px;
     }
     &-list {
@@ -107,7 +113,8 @@ header {
             margin-top: 64px;
         }
         &-heading {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Anton', sans-serif;
+            // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 48px;
         }
         &-text {
@@ -127,7 +134,8 @@ header {
     &-title {
         // display: inline-block;
         text-align: right;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 64px;
     }
     &-list {
@@ -148,7 +156,8 @@ footer {
         text-align: right;
         font-size: 16px;
         &-yayo256 {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Anton', sans-serif;
+            // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
     }
 }
