@@ -1,0 +1,176 @@
+@charset "UTF-8";
+body {
+  background: #fdfdfd;
+  font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+header {
+  overflow: hidden;
+}
+
+.header {
+  margin: 40px auto 0px;
+  width: 800px;
+}
+
+.header-logo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+}
+
+.header-menu {
+  margin-top: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 28px;
+}
+
+.header-menu::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-menu-list {
+  float: right;
+  list-style: none;
+}
+
+.header-menu-list::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-menu-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-menu-item {
+  float: left;
+}
+
+.header-menu-item + .header-menu-item {
+  margin-left: 32px;
+}
+
+.header-menu-item-text {
+  display: inline-block;
+  padding: 16px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+#home {
+  overflow: hidden;
+  border-bottom: solid 4px #e4e4e4;
+  margin-bottom: 200px;
+}
+
+.home {
+  margin: 128px auto 12px;
+  width: 800px;
+}
+
+.home::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.home::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.home-text {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  letter-spacing: 4px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 140px;
+  color: #e4e4e4;
+}
+
+#intro {
+  overflow: hidden;
+}
+
+.intro {
+  margin: 52px auto 0px;
+  width: 800px;
+}
+
+.intro-title {
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+}
+
+.intro-list {
+  margin-top: 72px;
+  list-style: none;
+}
+
+.intro-item + .intro-item {
+  margin-top: 64px;
+}
+
+.intro-item-heading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px;
+}
+
+.intro-item-text {
+  margin-top: 12px;
+  font-size: 28px;
+  color: #4f4f4f;
+}
+
+#works {
+  overflow: hidden;
+}
+
+.works {
+  margin: 152px auto 128px;
+  width: 800px;
+}
+
+.works-title {
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+}
+
+.works-list {
+  list-style: none;
+}
+
+footer {
+  overflow: hidden;
+  margin-top: 128px;
+  background-color: #c7c7c7;
+}
+
+.footer {
+  margin: 16px auto;
+  width: 800px;
+}
+
+.footer-text {
+  text-align: right;
+  font-size: 16px;
+}
+
+.footer-text-yayo256 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

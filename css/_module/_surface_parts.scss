@@ -1,0 +1,13 @@
+$white-gray: #fefefe;
+$light-gray: #f7f7f7;
+$dark-gray: #6d6d6d;
+$black-gray: #202020;
+
+@mixin default {
+	* {
+		color: $black-gray;
+	}
+	body {
+		background-color: $white-gray;
+	}
+}
