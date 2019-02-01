@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import "layout_parts";
 @import "surface_parts";
 
@@ -39,38 +40,57 @@ body {
 	background: #fdfdfd;
 	font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 >>>>>>> first commit
+=======
+@mixin clearfix {
+	&::before{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	&::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+body {
+	background: #fdfdfd;
+	font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+>>>>>>> first commit 3
 }
 
 header {
 	overflow: hidden;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	////////
 	background-color: $white-gray;
 	// background-color: #f2f2f2;
 	// background-color: black;
 	// box-shadow: 2px 0px 32px black;
+=======
+	// background-color: #ededed;
+>>>>>>> first commit 3
 }
 .header {
-	&-box {
-		margin: 80px auto 24px;
-		////////
-		// color: white;
-		width: 840px;
-		// background-color: #353535;
-		@include clearfix;
-	}
+	margin: 40px auto 0px;
+	width: 800px;
 	&-logo {
-		&-text {
-			font-size: 52px;
-		}
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		// font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-size: 60px;
 	}
 	&-menu {
-		margin-top: 48px;
-		float: right;
-		////////
+		margin-top: 20px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 28px;
+		@include clearfix;
 		&-list {
+			float: right;
 			list-style: none;
 			@include clearfix;
+<<<<<<< HEAD
 			&-item {
 				&:not(:first-child) {
 					margin-left: 40px
@@ -104,6 +124,8 @@ header {
 			float: right;
 			list-style: none;
 			@include clearfix;
+=======
+>>>>>>> first commit 3
 		}
 		&-item {
 			& + & {
@@ -115,12 +137,16 @@ header {
 				padding: 16px 12px;
 				text-decoration: none;
 				color: black;
+<<<<<<< HEAD
 >>>>>>> first commit
+=======
+>>>>>>> first commit 3
 			}
 		}
 	}
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #main {
 	&-picture {
@@ -137,38 +163,57 @@ header {
 	&-production {
 		overflow: hidden;
 	}
+=======
+#home {
+	overflow: hidden;
+	border-bottom: solid 4px #e4e4e4;
+	margin-bottom: 200px;
+>>>>>>> first commit 3
 }
-.main-picture {
-	&-box {
-		margin: 0px auto;
-		////////
-		height: 600px;
-		// width: 840px;
-		background-image : url("../../img/yayo256.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
+.home {
+	margin: 128px auto 12px;
+	// position: relative;
+	// height: 360px;
+	width: 800px;
+	@include clearfix();
+	&-text {
+		display: inline-block;
+		// position: absolute;
+		// bottom: 4px;
+		// right: 0px;
+		// float: right;
+		text-align: right;
+		width: 100%;
+		letter-spacing: 4px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 140px;
+		color: #e4e4e4;
+		&-1 {
+			// text-align: left;
+		}
+		&-2 {
+			// margin-top: -4px;
+			// text-align: center;
+		}
 	}
-	// &-image {
-	// 	display: block;
-	// 	width: 100%;
-	// 	// opacity: 0.8;
-	// }
 }
-.main {
-	&-box {
-		margin: 120px auto;
-		width: 840px;
-	}
+
+#intro {
+	overflow: hidden;
+}
+.intro {
+	margin: 52px auto 0px;
+	width: 800px;
 	&-title {
-		font-size: 44px;
-		color: $dark-gray;
-		font-weight: normal;
+		// display: inline-block;
+		text-align: right;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 64px;
 	}
 	&-list {
-		margin-top: 84px;
-		////////
+		margin-top: 72px;
 		list-style: none;
+<<<<<<< HEAD
 		&-item {
 			&:not(:first-child) {
 				margin-top: 44px;
@@ -232,6 +277,8 @@ header {
 	&-list {
 		margin-top: 72px;
 		list-style: none;
+=======
+>>>>>>> first commit 3
 	}
 	&-item {
 		& + & {
@@ -245,37 +292,38 @@ header {
 			margin-top: 12px;
 			font-size: 28px;
 			color: #4f4f4f
+<<<<<<< HEAD
 >>>>>>> first commit
+=======
+>>>>>>> first commit 3
 		}
 	}
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer {
+=======
+#works {
+>>>>>>> first commit 3
 	overflow: hidden;
-	background-color: $dark-gray;
 }
-.footer {
-	&-box {
-		margin: 16px auto;
-		////////
-		width: 840px;
-		color: $white-gray;
-		@include clearfix;
+.works {
+	margin: 152px auto 128px;
+	width: 800px;
+	&-title {
+		// display: inline-block;
+		text-align: right;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 64px;
 	}
-	&-twitter {
-		&-text {
-			text-decoration: none;
-			color: $white-gray;
-			// font-size: 20px;
-		}
+	&-list {
+		list-style: none;
 	}
-	&-message {
-		margin-top: 20px;
-		////////
-		float: right;
-		&-text {
+}
 
+
+<<<<<<< HEAD
 =======
 #works {
 	overflow: hidden;
@@ -295,6 +343,8 @@ footer {
 }
 
 
+=======
+>>>>>>> first commit 3
 footer {
 	overflow: hidden;
 	margin-top: 128px;
@@ -308,7 +358,10 @@ footer {
 		font-size: 16px;
 		&-yayo256 {
 			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+<<<<<<< HEAD
 >>>>>>> first commit
+=======
+>>>>>>> first commit 3
 		}
 	}
 }
